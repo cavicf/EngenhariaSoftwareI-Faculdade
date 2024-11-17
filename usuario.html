@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="usuario.js" defer></script>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <header class="text-center py-5">
+            <h1 class="text-primary">Gerenciar Usuários</h1>
+        </header>
+        <main>
+            <form id="form-usuario" class="form">
+                <h2 class="text-secondary">Inserir Usuário</h2>
+                <label for="usuario">Nome do Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <label for="observacoes-usuario">Observações</label>
+    <textarea id="observacoes-usuario" name="observacoes-usuario"></textarea>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+            <h2 class="text-secondary">Usuários Cadastrados</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="usuarios-list">
+                    <!-- Os usuários serão adicionados aqui dinamicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

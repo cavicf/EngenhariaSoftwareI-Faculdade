@@ -40,6 +40,10 @@ header h1 {
     background-color: #d63384;
 }
 
+.btn-success {
+    background-color: #6f42c1;
+}
+
 .btn-edit {
     background-color: #ffc107;
     color: #fff;
@@ -49,12 +53,33 @@ header h1 {
     cursor: pointer;
 }
 
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
 .btn-delete {
     background-color: #dc3545;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Novo botão na página inicial */
+.new-product-btn {
+    background-color: #007bff; /* Azul para se destacar */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 12px 20px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -69,12 +94,16 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ced4da;
     border-radius: 4px;
+}
+
+select {
+    cursor: pointer;
 }
 
 /* Tabela */
@@ -93,4 +122,50 @@ input, textarea {
 .table th {
     background-color: #6f42c1;
     color: #fff;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+/* Estilo da linha da tabela quando editando ou excluindo */
+.table .btn-edit, .table .btn-delete {
+    margin: 0;
+}
+
+/* Ajuste para botões Editar e Excluir ficarem lado a lado */
+.table .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px;
+}
+
+.table .btn-edit, .table .btn-delete {
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    padding: 8px 16px;
+    text-align: center; /* Alinha o texto ao centro */
+    width: 48%; /* Faz os botões ocuparem 48% da largura da célula */
+}
+
+.table .btn-edit:hover, .table .btn-delete:hover {
+    opacity: 0.8;
+}
+
+/* Mensagens de sucesso ou erro */
+.alert {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
 }

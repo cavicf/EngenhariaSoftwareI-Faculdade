@@ -44,6 +44,31 @@ header h1 {
     background-color: #6f42c1;
 }
 
+.btn-info {
+    background-color: #d63384;
+}
+
+
+/* Página de Estoque */
+form label {
+    margin-top: 10px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.table td, .table th {
+    text-align: center;
+}
+
+.table .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
 .btn-edit {
     background-color: #ffc107;
     color: #fff;

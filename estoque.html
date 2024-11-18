@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center py-5">
+            <h2 class="text-primary">Gerenciar Estoque</h2>
+        </header>
+        <main>
+            <form id="estoqueForm" class="form">
+                <label for="nome">Nome do Produto *</label>
+                <input type="text" id="nome" required maxlength="256">
+
+                <label for="tipo">Tipo do Produto *</label>
+                <select id="tipo" required>
+                    <option value="">Selecione o tipo</option>
+                    <option value="agenda">Agenda</option>
+                    <option value="lapis">Lápis</option>
+                    <option value="tinta">Tinta</option>
+                </select>
+
+                <label for="quantidade">Quantidade em Estoque *</label>
+                <input type="number" id="quantidade" required min="0">
+
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" maxlength="512"></textarea>
+
+                <button type="submit" class="btn btn-success">Adicionar Produto</button>
+            </form>
+
+            <table class="table" id="estoqueTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas geradas dinamicamente -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="estoque.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="produto.js" defer></script>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <header class="text-center py-5">
+            <h1 class="text-primary">Gerenciar Produtos</h1>
+        </header>
+        <main>
+            <form id="form-produto" class="form">
+                <h2 class="text-secondary">Inserir Produto</h2>
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" required step="0.01" placeholder="R$__,__">
+                
+                <label for="fornecedor">Fornecedor:</label>
+                <input type="text" id="fornecedor" name="fornecedor" required>
+                
+                <label for="tipo">Tipo de Produto:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="lapis">Lápis 6B</option>
+                    <option value="tinta">Tinta a Óleo</option>
+                    <option value="outros">Outros</option>
+                </select>
+                
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="material-escolar">Material Escolar</option>
+                    <option value="material-artistico">Material Artístico</option>
+                    <option value="outros">Outros</option>
+                </select>
+                
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+                
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" maxlength="512"></textarea>
+                
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+            
+            <h2 class="text-secondary">Produtos Cadastrados</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Fornecedor</th>
+                        <th>Tipo</th>
+                        <th>Categoria</th>
+                        <th>Marca</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="produtos-list">
+                    <!-- Aqui serão inseridas as linhas com os botões lado a lado -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

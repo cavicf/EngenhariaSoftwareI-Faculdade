@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Folha de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="relatorioPagamento.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Relatório de Folha de Pagamento</h1>
+        </header>
+        <form id="filtro-form" class="form">
+            <label for="data-inicial">Data Inicial*</label>
+            <input type="date" id="data-inicial" required>
+
+            <label for="data-final">Data Final*</label>
+            <input type="date" id="data-final" required>
+
+            <label for="cargo">Cargo</label>
+            <select id="cargo">
+                <option value="todos" selected>Todos</option>
+                <option value="funcionario">Funcionário</option>
+                <option value="gerente">Gerente</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <button type="button" class="btn btn-primary" id="gerar-relatorio-btn">Gerar Relatório</button>
+        </form>
+
+        <div id="relatorio-container">
+            <!-- Relatório gerado dinamicamente será exibido aqui -->
+        </div>
+
+        <canvas id="grafico-pagamentos" width="400" height="200"></canvas>
+    </div>
+</body>
+</html>

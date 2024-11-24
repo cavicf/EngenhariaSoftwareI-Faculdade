@@ -49,6 +49,28 @@ header h1 {
     background-color: #d63384;
 }
 
+.btn-info1 {
+    background-color: #6e32a7;
+}
+
+.btn-info2 {
+    background-color: #6e32a7;
+}
+
+/* Centralizar e aproximar apenas os botões de Relatórios */
+.button-container {
+    display: flex; /* Ativa o modelo flexbox */
+    flex-wrap: wrap; /* Permite quebra de linha, se necessário */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Reduz o espaço entre os botões */
+}
+
+.button-container .btn-info1,
+.button-container .btn-info2 {
+    text-align: center; /* Centraliza o texto dentro do botão */
+    width: 200px; /* Mantém um tamanho fixo para alinhamento */
+}
+
 
 /* Página de Estoque */
 form label {
@@ -194,4 +216,67 @@ select {
 .alert-danger {
     background-color: #dc3545;
     color: white;
+}
+
+/* Relatório de Folha de Pagamento */
+#relatorio-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+#relatorio-container h3 {
+    color: #6f42c1;
+}
+
+#relatorio-container p {
+    margin: 5px 0;
+    color: #333;
+}
+
+canvas {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Adicionando estilo para o gráfico */
+#chart-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Estilo da Tabela de Vendas */
+#sales-report {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+#sales-report th, #sales-report td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+#sales-report th {
+    background-color: #6f42c1;
+    color: white;
+}
+
+#sales-report td {
+    background-color: white;
+}
+
+#totals {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
 }

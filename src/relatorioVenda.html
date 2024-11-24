@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Vendas</title>
+    <link rel="stylesheet" href="style.css"> <!-- Seu CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emitir Relatório de Vendas</h1>
+        </header>
+
+        <!-- Formulário de Filtros -->
+        <form id="filter-form" class="form">
+            <label for="data-inicial">Data Inicial:</label>
+            <input type="date" id="data-inicial" required>
+
+            <label for="data-final">Data Final:</label>
+            <input type="date" id="data-final" required>
+
+            <label for="tipo-produto">Tipo de Produto:</label>
+            <select id="tipo-produto">
+                <option value="todos">Todos</option>
+                <option value="material-escolar">Material Escolar</option>
+                <option value="material-escritorio">Material de Escritório</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="todos">Todos</option>
+                <option value="categoria1">Categoria 1</option>
+                <option value="categoria2">Categoria 2</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Gerar Relatório</button>
+        </form>
+
+        <!-- Gráfico de Barras -->
+        <div id="chart-container" style="display: none;">
+            <canvas id="bar-chart"></canvas>
+        </div>
+
+        <!-- Tabela de Vendas -->
+        <table id="sales-report" class="table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Data da Venda</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados da tabela gerados dinamicamente -->
+            </tbody>
+        </table>
+
+        <!-- Subtotais e Total Geral -->
+        <div id="totals" style="display: none;">
+            <p><strong>Subtotal de Produtos Vendidos:</strong> <span id="sub-total">R$ 0,00</span></p>
+            <p><strong>Total Geral Vendido:</strong> <span id="total-geral">R$ 0,00</span></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="relatorioVenda.js"></script> <!-- Seu JS -->
+</body>
+</html>

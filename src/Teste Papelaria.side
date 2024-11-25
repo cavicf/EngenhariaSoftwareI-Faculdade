@@ -1,0 +1,938 @@
+{
+  "id": "f293096e-cdf1-466b-8e70-11f5b2872bd6",
+  "version": "2.0",
+  "name": "Teste Papelaria",
+  "url": "http://localhost/Papelaria/src/index.html",
+  "tests": [{
+    "id": "e2790074-dabf-45b8-a5b9-9a258e729bb5",
+    "name": "Teste produto",
+    "commands": [{
+      "id": "337a5c6e-a59e-4f31-ae94-a382fa461789",
+      "comment": "",
+      "command": "open",
+      "target": "/Papelaria/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eca04b4a-438f-4f04-895d-392cbf541c08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ecbfb1f-f730-4005-80ec-4990d6df5893",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Produtos",
+      "targets": [
+        ["linkText=Gerenciar Produtos", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Produto.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c514a16-12b0-4f15-938c-c140fb164757",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d13241d5-bfd5-48a3-a11b-d3338ea76794",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Caneta"
+    }, {
+      "id": "7c95dceb-dd13-4773-91ad-597e2aa2156e",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb8dae5-1881-4298-a8a7-1df55e9e9ce5",
+      "comment": "",
+      "command": "type",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["name=preco", "name"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "11.50"
+    }, {
+      "id": "a437bb0a-fd7a-4099-b144-4c867a940b6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["name=fornecedor", "name"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48acb2f2-c07f-49f7-b400-122e6a0ad3a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["name=fornecedor", "name"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Faber Castel"
+    }, {
+      "id": "a0c79b2b-1103-45db-9b4e-5f40a77ba48d",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["name=tipo", "name"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//select[@id='tipo']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b98df08-d68a-4ac8-b075-b9425ac59d80",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo",
+      "targets": [],
+      "value": "label=Tinta a Óleo"
+    }, {
+      "id": "f56acc79-04f5-4aef-a3c3-f2fd57c0cb29",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["name=tipo", "name"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//select[@id='tipo']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6da5f7d-5e6b-4a56-a088-470e6c99b359",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo",
+      "targets": [],
+      "value": "label=Lápis 6B"
+    }, {
+      "id": "7eebffc5-82e0-4502-bc56-14c096f1e467",
+      "comment": "",
+      "command": "click",
+      "target": "id=categoria",
+      "targets": [
+        ["id=categoria", "id"],
+        ["name=categoria", "name"],
+        ["css=#categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0339cfd-987d-4ff2-b43e-c91a60d246be",
+      "comment": "",
+      "command": "select",
+      "target": "id=categoria",
+      "targets": [],
+      "value": "label=Material Artístico"
+    }, {
+      "id": "4d1f9050-e4e0-4a71-a1a7-aa2ad3cdc8f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=marca",
+      "targets": [
+        ["id=marca", "id"],
+        ["name=marca", "name"],
+        ["css=#marca", "css:finder"],
+        ["xpath=//input[@id='marca']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e81bb0aa-93cd-4323-8997-3ceec34d2acc",
+      "comment": "",
+      "command": "type",
+      "target": "id=marca",
+      "targets": [
+        ["id=marca", "id"],
+        ["name=marca", "name"],
+        ["css=#marca", "css:finder"],
+        ["xpath=//input[@id='marca']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Faber Castel"
+    }, {
+      "id": "b992c932-19ff-44d3-948c-c3c0c7f0ac6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2436adb7-7b9e-491a-bd31-0b9c6cc6c5b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ponta fina"
+    }, {
+      "id": "147dd7a4-1ad4-4358-8de6-52f2bcfd0c08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39e6a2e7-6ff9-4acd-bed2-710e01990263",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "702ed6c0-3f1e-49c2-a496-9f8e4ba7566b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e738c156-3d2a-4f53-bdff-c43f1bb60884",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-edit",
+      "targets": [
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=//tbody[@id='produtos-list']/tr/td[8]/button", "xpath:idRelative"],
+        ["xpath=//td[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6090514-dc72-4d56-a2d8-a61ba18a0466",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92271cec-9302-48ba-a3da-53bdbf983340",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca41825-7673-4f74-8d78-064ef17489f6",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f869ad1-c59c-4840-8941-5f1c0ff592fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["name=observacoes", "name"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ponta grossa"
+    }, {
+      "id": "23e20647-3679-4ccc-9255-5176a203a2bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0a0b141-ea3f-472b-982d-c5c3aac5d587",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b01a862-df06-403f-a552-f8877952b3ae",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-produto']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9985e5d7-cdf7-4316-ab41-a6a409061851",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-delete",
+      "targets": [
+        ["css=.btn-delete", "css:finder"],
+        ["xpath=//tbody[@id='produtos-list']/tr/td[8]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "caa2ed3b-7535-41d1-a0b7-5e438aa02539",
+    "name": "Teste estoque",
+    "commands": [{
+      "id": "c43d004b-c37b-407b-9e97-615919cdd646",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Papelaria/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dce8092-773b-4646-84a1-3be4cd257415",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "393f4b45-d6f6-4d22-9cd3-9bbe3ecdb0ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gerenciar Estoque",
+      "targets": [
+        ["linkText=Gerenciar Estoque", "linkText"],
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Gerenciar Estoque')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'estoque.html')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Gerenciar Estoque')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5db5b61-82e7-4805-8162-41bb803a4bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "931dcdb9-ba5f-42c8-8fbd-e7a88a55073d",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Caneta"
+    }, {
+      "id": "789aa8b4-a4cf-4d36-a587-e2d520ff57bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//select[@id='tipo']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36d1f4a-b92d-40b6-ac3f-ba299d82b1a8",
+      "comment": "",
+      "command": "select",
+      "target": "id=tipo",
+      "targets": [],
+      "value": "label=Lápis"
+    }, {
+      "id": "6cd52b9d-22c0-4561-ada9-20548d85090b",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cd3611f-a4d8-46cc-bd51-1d4f5a756919",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "23"
+    }, {
+      "id": "bab9fbb8-2f3d-4312-86a2-829e7cc0e90b",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "820a6314-b2d0-4678-8b42-da262a65eec2",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Estoque cheio"
+    }, {
+      "id": "f3b6c870-ed99-4070-8bbc-a09c0e8fad60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Adicionar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c2a14a-7f5f-4254-be64-1ac0556a7413",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//select[@id='tipo']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a113b76c-30de-4f01-a5ce-cf5cc5b0eba0",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipo",
+      "targets": [
+        ["id=tipo", "id"],
+        ["css=#tipo", "css:finder"],
+        ["xpath=//select[@id='tipo']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f030e84-ecdf-437b-987b-6a9f59515bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-edit",
+      "targets": [
+        ["css=.btn-edit", "css:finder"],
+        ["xpath=//tr[@id='row-1731943893684']/td[5]/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1295d749-717c-4e50-88e5-75197a1cc9d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a1634e3-f00e-47e7-856e-deb8e7df55d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06f89914-b4be-4560-a0f0-cb3d8745ad97",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60893b75-7f62-4f26-90fa-fd5ffa1b999c",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//textarea[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Estoque vazio"
+    }, {
+      "id": "13893303-e2f0-4eab-bf2d-ae9fea5b018d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='estoqueForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1da1076e-6dbd-4e23-9867-117b9f5155d8",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "192d6a86-7862-494e-86e4-1d42b7558810",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-delete",
+      "targets": [
+        ["css=.btn-delete", "css:finder"],
+        ["xpath=//tr[@id='row-1731943893684']/td[5]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ba7b1d-4f7e-4b82-b7b5-e53b331452e1",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Tem certeza que deseja excluir este produto?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0851476a-015c-4628-8e58-f0e1f48824a0",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c68d86fe-3605-42bf-8be4-d9c308c7cf98",
+    "name": "Teste relatório de pagamentos",
+    "commands": [{
+      "id": "6f6b6823-5745-49bb-8b87-0fac68b0b83d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Papelaria/src/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea13c400-8f34-4cd8-af91-3ad973a51777",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f451e39f-67ca-45f2-be58-5409fea53efd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Relatório de Pagamentos",
+      "targets": [
+        ["linkText=Relatório de Pagamentos", "linkText"],
+        ["css=.btn-info2", "css:finder"],
+        ["xpath=//a[contains(text(),'Relatório de Pagamentos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'relatorioPagamento.html')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Relatório de Pagamentos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02c50a18-3bc0-4c0e-ae67-d92e82afa890",
+      "comment": "",
+      "command": "click",
+      "target": "id=data-inicial",
+      "targets": [
+        ["id=data-inicial", "id"],
+        ["css=#data-inicial", "css:finder"],
+        ["xpath=//input[@id='data-inicial']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86f2430c-fa55-43c4-b602-bbf367da6599",
+      "comment": "",
+      "command": "type",
+      "target": "id=data-inicial",
+      "targets": [
+        ["id=data-inicial", "id"],
+        ["css=#data-inicial", "css:finder"],
+        ["xpath=//input[@id='data-inicial']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2024-11-01"
+    }, {
+      "id": "361edff1-28aa-41ff-8701-6e4cacb802fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=data-final",
+      "targets": [
+        ["id=data-final", "id"],
+        ["css=#data-final", "css:finder"],
+        ["xpath=//input[@id='data-final']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b6a5de9-5a60-4e6b-b4ff-4549d7434dc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=data-final",
+      "targets": [
+        ["id=data-final", "id"],
+        ["css=#data-final", "css:finder"],
+        ["xpath=//input[@id='data-final']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2024-11-30"
+    }, {
+      "id": "106e5597-9d78-46fc-b376-cf1dfbd2251c",
+      "comment": "",
+      "command": "click",
+      "target": "id=gerar-relatorio-btn",
+      "targets": [
+        ["id=gerar-relatorio-btn", "id"],
+        ["css=#gerar-relatorio-btn", "css:finder"],
+        ["xpath=//button[@id='gerar-relatorio-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afd5a8fc-ba5d-4f92-bf17-5ad165e654f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=gerar-relatorio-btn",
+      "targets": [
+        ["id=gerar-relatorio-btn", "id"],
+        ["css=#gerar-relatorio-btn", "css:finder"],
+        ["xpath=//button[@id='gerar-relatorio-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbf92f6e-3a61-4df2-9407-74bfa012d55d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=gerar-relatorio-btn",
+      "targets": [
+        ["id=gerar-relatorio-btn", "id"],
+        ["css=#gerar-relatorio-btn", "css:finder"],
+        ["xpath=//button[@id='gerar-relatorio-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='filtro-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6bc28a44-025d-49fc-bf81-aeb9b15544a4",
+    "name": "Teste relatório de vendas",
+    "commands": [{
+      "id": "3d760b11-3f85-4dcf-9f59-5d1f4e042b78",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Papelaria/src/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac49e51d-c50e-4c2c-9a5b-7384c240e5d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da0cbede-f2db-47a7-ac9b-524279e9833d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Relatório de Vendas",
+      "targets": [
+        ["linkText=Relatório de Vendas", "linkText"],
+        ["css=.btn-info1", "css:finder"],
+        ["xpath=//a[contains(text(),'Relatório de Vendas')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'relatorioVenda.html')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Relatório de Vendas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3296783d-a2e6-4b75-b13b-b52fab73761b",
+      "comment": "",
+      "command": "click",
+      "target": "id=data-inicial",
+      "targets": [
+        ["id=data-inicial", "id"],
+        ["css=#data-inicial", "css:finder"],
+        ["xpath=//input[@id='data-inicial']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69bc9e85-f24b-4513-891c-37e142f95ee5",
+      "comment": "",
+      "command": "type",
+      "target": "id=data-inicial",
+      "targets": [
+        ["id=data-inicial", "id"],
+        ["css=#data-inicial", "css:finder"],
+        ["xpath=//input[@id='data-inicial']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2024-11-01"
+    }, {
+      "id": "e14e8c29-1fa8-4362-b9c5-6f95cbfb2c92",
+      "comment": "",
+      "command": "click",
+      "target": "id=data-final",
+      "targets": [
+        ["id=data-final", "id"],
+        ["css=#data-final", "css:finder"],
+        ["xpath=//input[@id='data-final']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "363f0cb4-0d47-4535-b08d-3424de7787fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=data-final",
+      "targets": [
+        ["id=data-final", "id"],
+        ["css=#data-final", "css:finder"],
+        ["xpath=//input[@id='data-final']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2024-11-30"
+    }, {
+      "id": "7d7a71c5-5377-47da-a5ad-2172b6dd082d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0af26fd-b267-4331-96f2-3cae3f2e2b97",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c1f5f8-2bb1-436d-93ef-ae01d2fdf172",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='filter-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gerar Relatório')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8615641c-0e11-4608-8065-325650f75bee",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2790074-dabf-45b8-a5b9-9a258e729bb5"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/Papelaria/", "http://localhost/Papelaria/src/index.html"],
+  "plugins": []
+}

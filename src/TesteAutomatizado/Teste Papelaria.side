@@ -2,7 +2,7 @@
   "id": "f293096e-cdf1-466b-8e70-11f5b2872bd6",
   "version": "2.0",
   "name": "Teste Papelaria",
-  "url": "http://localhost/Papelaria/src/index.html",
+  "url": "http://localhost/Papelaria/src/main/index.html",
   "tests": [{
     "id": "e2790074-dabf-45b8-a5b9-9a258e729bb5",
     "name": "Teste produto",
